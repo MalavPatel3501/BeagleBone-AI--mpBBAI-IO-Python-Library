@@ -1,0 +1,22 @@
+mpBBAI-IO
+
+mpBBAI-IO is a Python module for using control IO pins on the BeagleBone AI.
+There's lots of work still to be done. 
+
+Some pheripharal example code based on mpBBAI-IO developed 
+by Malav Vinodkumar Patel(Teksun Microsys Pvt Ltd): 
+
+Project Detail:
+Explain and given steps of Full Process for  Pin muxing for Beagle Bone AI Board(am5729-beagleboneai).
+In this Project i developed Beagle Bone AI Python Library and individual module. you can import module/libarary and use it in your project.
+
+Steps: 
+1) Make customize .dts file,
+2) Compile .dts file using make command,
+3) Generate  .dtb file, 
+4) Install .dtb file in boot directory, 
+5) Update environment file
+
+In This project i added header 8 and header 9 Pin with GPIO number mapping file and Pin with Register value file.
+Moreover i given Beagle Bone AI System Reference Manual Link, also i explain all interface enable steps in Readme file.  
+In additionally i given some example code so you can run,use it and test the interfaces/pin functionalities. 
