@@ -128,16 +128,17 @@ class mpBBAIGpio:
         if inData == "1\n": # a 1 means it's high
                         return 1
         
-    def analogRead(self,pin): 
-        if pin in analogPinDef:            
-                fileName = "/sys/bus/iio/devices/iio:device0/" + (analogPinDef [pin]) 
-                fw = file(fileName, "r")
+    def analogRead(self,pin):
+        if pin in analogPinDef:
+                fileName = "/sys/bus/iio/devices/iio:device0/" + (analogPinDef [pin])
+                fw = open(fileName, "r")
                 ADCdata = fw.read()
                 fw.close()
                 return ADCdata
         else:
-                print "analogRead error: Pin " + channel + " is not defined as an analog in pin in the pin definition."
+                print ("analogRead error: Pin " + channel + " is not defined as an analog in pin in the pin definit$
                 return -1;
+
 
 
 
